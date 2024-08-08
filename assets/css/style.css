@@ -51,6 +51,14 @@ nav a:hover {
 #navmenu >li {
     margin-bottom: 10px;
 }
+nav {
+    position: absolute;
+    background-color: black;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    left: 0;
+    display: none;
+}
 
 /*main content styling*/
 
