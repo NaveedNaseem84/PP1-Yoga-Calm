@@ -129,8 +129,21 @@ main {
 }
 #cover-text li {
    list-style-type: none;
-    
-    
+  
+}
+#tree-pose {
+    background-color: lightcoral;
+    padding: 10px 10px 10px 10px;
+}
+
+#seated-twist {
+    background-color: lightblue;
+    padding: 10px 10px 10px 10px;
+}
+
+#forward-fold {
+    background-color: lightslategrey;
+    padding: 10px 10px 10px 10px;
 }
 
 
