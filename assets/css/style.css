@@ -96,6 +96,7 @@ main {
    
 }
 
+
 #main-yoga-background {
     height: 1208px;
     width: 100%;
@@ -133,18 +134,36 @@ main {
 }
 #tree-pose {
     background-color: lightcoral;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 30px;
+   
+    
 }
 
 #seated-twist {
     background-color: lightblue;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 30px;
+    text-align: right;
 }
 
 #forward-fold {
     background-color: lightslategrey;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 50px;
+    
 }
+#tree-pose-image {
+    
+    background: url("../images/tree-pose.png") center center/cover;
+    display: flexbox;
+    width: 70%;
+    height: 20vh;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+   align-items: center;
+
+
+  }
 
 
 /* footer styling*/
@@ -192,6 +211,26 @@ main {
        left: 50px;
        font-size: 130%;
     
+    }
+
+    #forward-fold {
+        background-color: lightslategrey;
+        padding: 10px 10px 20px 1000px;
+        margin-bottom: 50px;
+        
+    }
+
+    #seated-twist {
+        background-color: lightblue;
+        padding: 10px 50px 30px 60vw;
+        text-align: left;
+    }
+
+    #tree-pose {
+        background-color: lightcoral;
+        padding: 10px 10px 20px 1000px;
+       display: flex;
+        
     }
 
    
