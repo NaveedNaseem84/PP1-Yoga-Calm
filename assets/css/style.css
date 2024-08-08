@@ -115,9 +115,16 @@ main {
     padding-bottom: 20px;    
 
 }
-#cover-text h2, p, ul {
-    color: #ffffff;
+#cover-text h2{
+    color: #ffffff;    
     
+}
+#cover-text ul {
+    color: #ffffff;    
+    
+}
+#cover-text p {
+    color: #ffffff;    
     
 }
 #cover-text li {
