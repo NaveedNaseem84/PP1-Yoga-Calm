@@ -42,6 +42,15 @@ nav a:hover {
     color: grey;
 
 }
+#navmenu {
+    font-size: 110%;
+    letter-spacing: 6px;
+    list-style-type: none;
+    
+}
+#navmenu >li {
+    margin-bottom: 10px;
+}
 
 /*main content styling*/
 
