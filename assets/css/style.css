@@ -18,6 +18,7 @@ body {
     /* Gen styling*/
     color: black;
     font-family: 'Poppins',sans-serif;
+   
 
 }
 
@@ -90,6 +91,8 @@ nav {
 main {    
     /*push footer to bottom and the main element take up rest of the space*/
     flex: 1 0 auto;  
+    margin-top: 130px;
+    
    
 }
 
