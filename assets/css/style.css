@@ -24,12 +24,18 @@ body {
 header {
     background-color: black;
     color: #ffffff;
-    padding: 0 1.2rem;
+    padding: 1rem 1.2rem;
     position: fixed;
     z-index: 100;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
    
 }
+
+/* Toggle of Nav bar*/
+
 header a{
     text-decoration: none;
     color: #ffffff;
@@ -46,17 +52,31 @@ nav a:hover {
     font-size: 110%;
     letter-spacing: 6px;
     list-style-type: none;
+    border-style: 1px solid #ffffff;
     
 }
 #navmenu >li {
     margin-bottom: 10px;
 }
+
+
 nav {
     position: absolute;
     background-color: black;
     padding: 0 10px 0 10px;
     width: 100%;
     left: 0;
+    display: none;
+    top: 100%
+   
+}
+#nav-toggle:checked~nav {
+    display: block;
+
+}.nav-toggle-label {
+    font-size: 3rem;
+}
+#nav-toggle {
     display: none;
 }
 
@@ -66,9 +86,35 @@ main {
     background: lightblue;
     /*push footer to bottom and the main element take up rest of the space*/
     flex: 1 0 auto;
+    
 }
 
 /* footer styling*/
 footer {
     background-color: lightgreen;
 }
+
+/*media queries */
+
+/* Tablets and larger */
+@media screen and (min-width: 768px)   {
+    nav {
+        display: block;
+        position: relative;
+        width:fit-content;
+        padding: 1rem;
+    }
+
+    #navmenu {
+        display: flex;
+    }
+    #navmenu >li {
+        padding-left: 30px;
+    }
+
+    .nav-toggle-label{
+        display: none;
+    }
+
+} 
+
