@@ -90,8 +90,15 @@ main {
 }
 
 /* footer styling*/
-footer {
+#socials {
     background-color: black;
+    text-align: center;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style-type: none;
+
 }
 
 /*media queries */
@@ -114,6 +121,12 @@ footer {
 
     .nav-toggle-label{
         display: none;
+    }
+
+    #socials {
+      
+        font-size: 35px;
+      
     }
 
 } 
