@@ -1,0 +1,22 @@
+/* Removal of default style using wildcard*/
+/* guidance followed from CI Love Running Project*/
+*{
+   padding: 0;
+   margin: 0; 
+   box-sizing: border-box;
+}
+/*Header styles*/
+header {
+    background-color: lightcoral;
+}
+
+/*main content styling*/
+
+main {
+    background: lightblue;
+}
+
+/* footer styling*/
+footer {
+    background-color: lightgreen;
+}
