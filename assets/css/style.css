@@ -49,6 +49,9 @@ header a{
   
 
 }
+header img {
+    width:80%
+}
 nav a:hover {
     text-decoration: underline;
     font-weight: bold;
@@ -305,6 +308,11 @@ main {
         padding-left: 20px;
         
         
+    }
+    #yoga-intro {
+        width: 55%;
+        text-align: center;
+        margin: auto;
     }
     
     /* below now not being used as streamlined using flex*/
