@@ -132,6 +132,20 @@ main {
    list-style-type: none;
   
 }
+
+/*ystart yoga styles*/
+#tree-image img {
+    width: 100%;    
+}
+#seated-twist-image img {
+    width: 100%;
+    
+}
+#forward-fold-image img {
+    width: 100%;
+    
+}
+
 #tree-pose {
     background-color: lightcoral;
     padding: 10px 10px 10px 30px;
@@ -230,6 +244,18 @@ main {
         background-color: lightcoral;
         padding: 10px 10px 20px 1000px;
        display: flex;
+        
+    }
+
+    #tree-image img {
+        width: 70%;    
+    }
+    #seated-twist-image img {
+        width: 50%;
+        
+    }
+    #forward-fold-image img {
+        width: 30%;
         
     }
 
