@@ -95,6 +95,9 @@ main {
     
    
 }
+.center-text {
+    text-align: center;
+}
 
 
 #main-yoga-background {
@@ -134,6 +137,7 @@ main {
 }
 
 /*ystart yoga styles*/
+
 #tree-image img {
     width: 100%;    
 }
@@ -149,6 +153,7 @@ main {
 #tree-pose {
     background-color: lightcoral;
     padding: 10px 10px 10px 30px;
+    text-align: center;
    
     
 }
@@ -156,13 +161,15 @@ main {
 #seated-twist {
     background-color: lightblue;
     padding: 10px 10px 10px 30px;
-    text-align: right;
+    text-align: center;
+    
 }
 
 #forward-fold {
     background-color: lightslategrey;
     padding: 10px 10px 10px 30px;
     margin-bottom: 50px;
+    text-align: center;
     
 }
 #tree-pose-image {
@@ -231,6 +238,7 @@ main {
         background-color: lightslategrey;
         padding: 10px 10px 20px 1000px;
         margin-bottom: 50px;
+        text-align: left;
         
     }
 
@@ -244,6 +252,7 @@ main {
         background-color: lightcoral;
         padding: 10px 10px 20px 1000px;
        display: flex;
+       text-align: center;
         
     }
 
