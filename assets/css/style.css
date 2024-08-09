@@ -157,7 +157,12 @@ main {
    
     
 }
-
+.flex img {
+    width: 100%;
+   
+}
+/* below now not being used as streamlined using flex*/
+/*
 #seated-twist {
     background-color: lightblue;
     padding: 10px 10px 10px 30px;
@@ -185,6 +190,14 @@ main {
 
 
   }
+   */
+  .flex {
+    
+    text-align: left;
+    padding: 30px 5px;    
+    background-color: rgba(50, 50, 50, 0.2);
+
+}
 
 
 /* footer styling*/
@@ -233,7 +246,8 @@ main {
        font-size: 130%;
     
     }
-
+/* below now not being used as streamlined using flex*/
+    /*
     #forward-fold {
         background-color: lightslategrey;
         padding: 10px 10px 20px 1000px;
@@ -244,7 +258,7 @@ main {
 
     #seated-twist {
         background-color: lightblue;
-        padding: 10px 50px 30px 60vw;
+        padding: 10px 10px 20px 1000px;
         text-align: left;
     }
 
@@ -255,12 +269,41 @@ main {
        text-align: left;
         
     }
+       */
+    .flex {
+        display: flex;                
+        width: 55%;       
+        text-align: right;   
+        font-size: 110%; 
+        margin:auto ;
+
+    }
+
+    .flex img {
+        display: flex;                
+        width: 65%;
+        margin: auto;  
+        text-align: center;    
+
+    }
+
+    .flex >div {       
+        width: 100%;
+        margin: 3px;
+        text-align: left;
+        padding-bottom: 150px;
+        padding-left: 20px;
+        
+        
+    }
+    /* below now not being used as streamlined using flex*/
+/*
 
     #tree-image img {
-        width: 70%;    
+        width: 75%;    
     }
     #seated-twist-image img {
-        width: 50%;
+        width: 30%;
         
     }
     #forward-fold-image img {
@@ -268,6 +311,6 @@ main {
         
     }
 
-   
+  */ 
 } 
 
