@@ -19,11 +19,12 @@
 
 <body>
     <!--header-->
-    <header>        
+    <header>
         <a id="logo" href="index.html"><img src="assets/images/Logo_small.png" alt="">
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"
+                style="color: #ffffff;"></i></label>
         <nav>
             <ul id="navmenu">
                 <li><a href="index.html">Home</a></li>
@@ -35,20 +36,77 @@
 
 
     <!--main body-->
-    <main>Main</main>
+    <main>
+        <section id="feedbackform">
+            <form id="feedback-form" action="https://formdump.codeinstitute.net" method="post">
+                <h2>Feedback.</h2>
+                <h3>Please fill in below to recieve a free Yoga Mat!*</h3>
+                <label for="input-name">Name:</label>
+                <input id="input-name" type="text" name="full_name" required>
+                <br>
+                <label for="input-email">Email:</label>
+                <input id="input-email" type="email" name="email_address" required>
+                <br>
+                <label for="age">Age</label>
+                <select id="age" name="age" required>
+                    <option value="under-20">Under 20</option>
+                    <option value="20s">20-29</option>
+                    <option value="30s">30-39</option>
+                    <option value="40s">40-49</option>
+                    <option value="50s">50-59</option>
+                    <option value="60+">60+</option>
+                    <option value="not say">N/A</option>
+                </select>
+                <br>
+                <p>How many days a week do you work from home?</p>
+                <label for="one-day">One</label>
+                <input type="radio" name="days-wfh" id="one-day" value="1" required>
+
+                <label for="two-to-three-day">Two to three</label>
+                <input type="radio" name="days-wfh" id="two-to-three-day" value="2 to 3" required>
+
+                <label for="everyday">Everyday</label>
+                <input type="radio" name="days-wfh" id="everyday" value="everyday" required>
+
+                <label for="not-often">Not often</label>
+                <input type="radio" id="not-often" name="days-wfh" value="not-often" required>
+
+                <br>
+                <label for="feedback">How can we improve?</label>
+                <br>
+                <textarea id="feedback" rows="6" cols="75" name="feedback"></textarea>
+                <div>
+                    <label for="join-mail">Join our mailing list for all the latest news and offers!</label>
+                    <input type="checkbox" id="join-mail" name="mailinglist" value="join">
+
+                    <br>
+                    <input type="submit" value="Enter prize draw">
+                    <input type="reset" value="Reset Form">
+
+        </section>
+        </form>
+
+    </main>
 
     <!--footer-->
     <footer>
         <ul id="socials">
-            <li><a href="https://Facebook.com" target="_blank" rel="noopener" aria-label="new tab - visit us on facebook"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="new tab - visit us on instagram"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a></li>
-            <li><a href="https://x.com/?lang=en" target="_blank" rel="noopener" aria-label="new tab - visit us on X"><i class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="new tab - visit us on youtube"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
-           
+            <li><a href="https://Facebook.com" target="_blank" rel="noopener"
+                    aria-label="new tab - visit us on facebook"><i class="fa-brands fa-facebook"
+                        style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="new tab - visit us on instagram"><i class="fa-brands fa-square-instagram"
+                        style="color: #ffffff;"></i></a></li>
+            <li><a href="https://x.com/?lang=en" target="_blank" rel="noopener" aria-label="new tab - visit us on X"><i
+                        class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="new tab - visit us on youtube"><i class="fa-brands fa-youtube"
+                        style="color: #ffffff;"></i></a></li>
+
 
         </ul>
     </footer>
-<!-- font awesome import-->
+    <!-- font awesome import-->
     <script src="https://kit.fontawesome.com/5d6f06bc3f.js" crossorigin="anonymous"></script>
 
 </body>
