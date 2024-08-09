@@ -153,7 +153,7 @@ main {
 #tree-pose {
     background-color: lightcoral;
     padding: 10px 10px 10px 30px;
-    text-align: center;
+    text-align: left;
    
     
 }
@@ -161,7 +161,7 @@ main {
 #seated-twist {
     background-color: lightblue;
     padding: 10px 10px 10px 30px;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -169,7 +169,7 @@ main {
     background-color: lightslategrey;
     padding: 10px 10px 10px 30px;
     margin-bottom: 50px;
-    text-align: center;
+    text-align: left;
     
 }
 #tree-pose-image {
@@ -252,7 +252,7 @@ main {
         background-color: lightcoral;
         padding: 10px 10px 20px 1000px;
        display: flex;
-       text-align: center;
+       text-align: left;
         
     }
 
