@@ -92,6 +92,7 @@ main {
     /*push footer to bottom and the main element take up rest of the space*/
     flex: 1 0 auto;  
     margin-top: 130px;
+    background-color: rgb(243, 240, 233);
     
    
 }
@@ -107,7 +108,7 @@ main {
     position: relative;
 }
 #cover-text {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .6);
     font-size: 120%;
     position: absolute;
     bottom: 350px;
@@ -162,8 +163,13 @@ main {
    
 }
 .flex ul {
-    padding-left:20px ;
+    padding-left:20px ;   
    
+}
+.flex h2 {
+    text-decoration: underline;
+    font-weight:bold;
+    padding: 0 0 15px 0;
 }
 /* below now not being used as streamlined using flex*/
 /*
@@ -199,7 +205,8 @@ main {
     
     text-align: left;
     padding: 30px 5px;    
-    background-color: rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, .2);
+   
 
 }
 
@@ -213,7 +220,6 @@ main {
     justify-content: space-around;
     font-size: 30px;
     list-style-type: none;
-    position: fixed;
     bottom: 0;
     right: 0;
     width: 100%;
