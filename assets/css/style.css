@@ -161,6 +161,10 @@ main {
     width: 100%;
    
 }
+.flex ul {
+    padding-left:20px ;
+   
+}
 /* below now not being used as streamlined using flex*/
 /*
 #seated-twist {
@@ -296,6 +300,7 @@ main {
         
         
     }
+    
     /* below now not being used as streamlined using flex*/
 /*
 
