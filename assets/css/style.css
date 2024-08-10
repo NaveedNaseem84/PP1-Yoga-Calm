@@ -228,6 +228,7 @@ main {
    
     font-size: 16px;
     width: 80%;
+    padding-right: 25px;
 }
 
 #feedback-form  {
@@ -235,12 +236,16 @@ main {
    background-color: rgba(0, 0, 0, .6);
    border-radius: 15px;
    text-align: center;
+   padding-left: 10px;
+   width: auto;
+   
    color: #ffffff;
 }
 .text-input{
     font-size: 16px;
     margin-bottom: 5px;
-    height: 30px;
+    height: 25px;
+    
 }
 
 
@@ -381,7 +386,10 @@ main {
         padding-left: 10%;
         padding-right: 50%;      
         */
-        width: 45%;
+        max-width: 450px;
+        position:relative;
+        left: 5%;
+        top: 50px;
     }
     
     /* below now not being used as streamlined using flex*/
