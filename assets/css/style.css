@@ -127,6 +127,24 @@ main {
     padding-bottom: 20px;    
 
 }
+
+#quote-text {
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 150%;
+    position: relative;
+    top: 80%;
+    left: 10px;
+    width: 80%;
+    min-height: 50px;
+    padding-top:20px;
+    padding-left: 30px;
+    border-radius: 15px;
+    padding-bottom: 20px; 
+    color: #ffffff;  
+    font-style: italic; 
+    text-align: left;
+
+}
 #cover-text h2{
     color: #ffffff;    
     
@@ -325,6 +343,30 @@ main {
       top: 1%;
        font-size: 130%;
        height: 45%;
+    
+    }
+
+    #quote-text {
+        background-color: rgba(0, 0, 0, .6);
+        font-size: 150%;
+        position: relative;
+        top: 80%;
+        left: 10px;
+        width: 80%;
+        min-height: 50px;
+        padding-top:20px;
+        padding-left: 30px;
+        border-radius: 15px;
+        padding-bottom: 20px; 
+        color: #ffffff;  
+        font-style: italic; 
+        text-align: left;
+    
+    }
+
+    #quote-text {       
+        width: 99%;        
+        text-align: center;
     
     }
 /* below now not being used as streamlined using flex*/
