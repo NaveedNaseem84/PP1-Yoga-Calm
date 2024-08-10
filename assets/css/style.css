@@ -17,12 +17,14 @@ body {
     flex-direction: column;
     /* Gen styling*/
     color: black;
-    font-family: 'Poppins',sans-serif;
-   
+    font-family: 'Poppins', sans-serif;
+
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
 }
@@ -38,34 +40,38 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-   
+
 }
 
 /* Toggle of Nav bar*/
 
-header a{
+header a {
     text-decoration: none;
     color: #ffffff;
-  
+
 
 }
+
 header img {
-    width:80%
+    width: 80%
 }
+
 nav a:hover {
     text-decoration: underline;
     font-weight: bold;
     color: grey;
 
 }
+
 #navmenu {
     font-size: 110%;
     letter-spacing: 6px;
     list-style-type: none;
-    
-    
+
+
 }
-#navmenu >li {
+
+#navmenu>li {
     margin-bottom: 10px;
 }
 
@@ -78,29 +84,32 @@ nav {
     left: 0;
     display: none;
     top: 100%
-   
 }
+
 #nav-toggle:checked~nav {
     display: block;
 
-}.nav-toggle-label {
+}
+
+.nav-toggle-label {
     font-size: 3rem;
 }
+
 #nav-toggle {
     display: none;
 }
 
 /*main content styling*/
-main {    
+main {
     /*push footer to bottom and the main element take up rest of the space*/
-    flex: 1 0 auto;  
-    margin-top: 120px;
+    flex: 1 0 auto;
+    margin-top: 100px;
     background-color: rgb(243, 240, 233);
     display: flex;
     flex-direction: column;
-    
-   
+
 }
+
 .center-text {
     text-align: center;
 }
@@ -108,23 +117,25 @@ main {
 
 #main-yoga-background {
     height: 1089px;
-    
+
     width: 100%;
-   /* background: url("../images/yoga-image-background.png")no-repeat center center/cover;*/
+    /* background: url("../images/yoga-image-background.png")no-repeat center center/cover;*/
     background: url("../images/yoga-main-background1.jpg")no-repeat center center/cover;
     position: relative;
 }
+
 #cover-text {
     background-color: rgba(0, 0, 0, .6);
     font-size: 120%;
     position: absolute;
     bottom: 350px;
+    left: 40px;
     width: 80%;
     min-height: 200px;
-    padding-top:40px;
+    padding-top: 40px;
     padding-left: 30px;
     border-radius: 15px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
 
 }
 
@@ -132,78 +143,108 @@ main {
     background-color: rgba(0, 0, 0, .6);
     font-size: 150%;
     position: relative;
-    top: 80%;
-    left: 10px;
+    top: 77%;
+    left: 40px;
     width: 80%;
     min-height: 50px;
-    padding-top:20px;
+    padding-top: 20px;
     padding-left: 30px;
     border-radius: 15px;
-    padding-bottom: 20px; 
-    color: #ffffff;  
-    font-style: italic; 
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-style: italic;
     text-align: left;
 
 }
-#cover-text h2{
-    color: #ffffff;    
-    
+
+#cover-text h2 {
+    color: #ffffff;
+
 }
+
 #cover-text ul {
-    color: #ffffff;    
-    
+    color: #ffffff;
+
 }
+
 #cover-text p {
-    color: #ffffff;    
-    
+    color: #ffffff;
+
 }
+
 #cover-text li {
-   list-style-type: none;
-  
+    list-style-type: none;
+
+}
+
+#knowmore {
+   
+    text-align: center;
+    text-decoration: none;
+    margin: 0 40px 0 10px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#knowmore a:hover {
+    color: red;
+}
+
+#knowmore a {
+    color: black;
 }
 
 /*ystart yoga styles*/
 
 #tree-image img {
-    width: 100%;    
+    width: 100%;
 }
+
 #seated-twist-image img {
     width: 100%;
-    
+
 }
+
 #forward-fold-image img {
     width: 100%;
-    
+
 }
 
 #tree-pose {
     background-color: lightcoral;
     padding: 10px 10px 10px 30px;
     text-align: left;
-   
-    
-}
-.flex {
-    
-    text-align: left;
-    padding: 30px 5px;    
-    background-color: rgba(0, 0, 0, .2);
-   
+
 
 }
+
+.flex {
+
+    text-align: left;
+    padding: 30px 5px;
+    background-color: rgba(0, 0, 0, .2);
+
+
+}
+
 .flex img {
     width: 100%;
-   
+
 }
+
 .flex ul {
-    padding-left:20px ;   
-   
+    padding-left: 20px;
+
 }
+
 .flex h2 {
     text-decoration: underline;
-    font-weight:bold;
+    font-weight: bold;
     padding: 0 0 15px 0;
 }
+
 /* below now not being used as streamlined using flex*/
 /*
 #seated-twist {
@@ -239,36 +280,39 @@ main {
 /*feedback form styling*/
 
 
-#feedback-form p, #feedback-form label {
+#feedback-form p,
+#feedback-form label {
     margin: 5px;
     padding: 5px;
 }
-#feedback-form > textarea {
-   
+
+#feedback-form>textarea {
+
     font-size: 16px;
     width: 80%;
     padding-right: 25px;
 }
 
-#feedback-form  {
-   border: 1px solid black;
-   background-color: rgba(0, 0, 0, .6);
-   border-radius: 15px;
-   text-align: center;
-   padding-left: 10px;
-   width: auto;
-   
-   color: #ffffff;
+#feedback-form {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    text-align: center;
+    padding-left: 10px;
+    width: auto;
+
+    color: #ffffff;
 }
-.text-input{
+
+.text-input {
     font-size: 16px;
     margin-bottom: 5px;
     height: 25px;
-    
+
 }
 
 
-/* form control styling*/ 
+/* form control styling*/
 #submit-style {
 
     margin: 15px;
@@ -292,7 +336,7 @@ main {
 
 #feedback-yoga-background {
     background-image: url("../images/feedback-form-back-ground.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -310,40 +354,49 @@ main {
     bottom: 0;
     right: 0;
     width: 100%;
-    
-    
+    margin: auto;
+
+
 
 }
 
 /*media queries */
 
 /* Tablets and larger */
-@media screen and (min-width: 768px)   {
+@media screen and (min-width: 768px) {
+
+    main {
+        /*push footer to bottom and the main element take up rest of the space*/
+
+        margin-top: 120px;
+    }
+
     nav {
         display: block;
         position: relative;
-        width:fit-content;
+        width: fit-content;
         padding: 1rem;
     }
 
     #navmenu {
         display: flex;
     }
-    #navmenu >li {
+
+    #navmenu>li {
         padding-left: 30px;
     }
 
-    .nav-toggle-label{
+    .nav-toggle-label {
         display: none;
     }
 
     #cover-text {
-       width: 600px;
-      left: 3%;
-      top: 1%;
-       font-size: 130%;
-       height: 45%;
-    
+        width: 600px;
+        left: 3%;
+        top: 1%;
+        font-size: 130%;
+        height: 50%;
+
     }
 
     #quote-text {
@@ -354,22 +407,33 @@ main {
         left: 10px;
         width: 80%;
         min-height: 50px;
-        padding-top:20px;
+        padding-top: 20px;
         padding-left: 30px;
         border-radius: 15px;
-        padding-bottom: 20px; 
-        color: #ffffff;  
-        font-style: italic; 
+        padding-bottom: 20px;
+        color: #ffffff;
+        font-style: italic;
         text-align: left;
-    
+
     }
 
-    #quote-text {       
-        width: 99%;        
-        text-align: center;
-    
+    #knowmore {
+   
+        
+        margin: 0 40px 0 10px;
+       
+        padding: 5px;
+       width: 30%;;
+        background-color: #ffffff;
     }
-/* below now not being used as streamlined using flex*/
+
+    #quote-text {
+        width: 99%;
+        text-align: center;
+
+    }
+
+    /* below now not being used as streamlined using flex*/
     /*
     #forward-fold {
         background-color: lightslategrey;
@@ -394,31 +458,32 @@ main {
     }
        */
     .flex {
-        display: flex;                
-        width: 55%;       
-        text-align: right;   
-        font-size: 110%; 
-        margin:auto ;
+        display: flex;
+        width: 55%;
+        text-align: right;
+        font-size: 110%;
+        margin: auto;
 
     }
 
     .flex img {
-        display: flex;                
+        display: flex;
         width: 65%;
-        margin: auto;  
-        text-align: center;    
+        margin: auto;
+        text-align: center;
 
     }
 
-    .flex >div {       
+    .flex>div {
         width: 100%;
         margin: 3px;
         text-align: left;
         padding-bottom: 150px;
         padding-left: 20px;
-        
-        
+
+
     }
+
     #yoga-intro {
         width: 55%;
         text-align: center;
@@ -426,19 +491,19 @@ main {
     }
 
     #feedbackform {
-     /* margin-top: 0.5%;
+        /* margin-top: 0.5%;
       margin-left: 0.5%;
         padding-left: 10%;
         padding-right: 50%;      
         */
         max-width: 450px;
-        position:relative;
+        position: relative;
         left: 2%;
         top: 50px;
     }
-    
+
     /* below now not being used as streamlined using flex*/
-/*
+    /*
 
     #tree-image img {
         width: 75%;    
@@ -452,6 +517,5 @@ main {
         
     }
 
-  */ 
-} 
-
+  */
+}
