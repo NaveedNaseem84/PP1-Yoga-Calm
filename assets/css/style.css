@@ -321,8 +321,10 @@ main {
 
     #cover-text {
        width: 600px;
-       left: 50px;
+      left: 3%;
+      top: 1%;
        font-size: 130%;
+       height: 45%;
     
     }
 /* below now not being used as streamlined using flex*/
