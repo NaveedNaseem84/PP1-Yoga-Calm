@@ -229,7 +229,7 @@ main {
 .flex {
 
     text-align: left;
-    padding: 30px 5px 0 0;
+    padding: 30px 5px 0 10px;
     background-color: rgba(0, 0, 0, .2);
 
 
@@ -327,6 +327,8 @@ main {
     color: white;
     border: none;
     border-radius: 15px;
+    font-size: 18px;
+    width: 150px;
 }
 
 #reset-style {
@@ -337,6 +339,7 @@ main {
     color: white;
     border: none;
     border-radius: 15px;
+    font-size: 18px;
     border: 1px solid red;
 }
 
@@ -362,10 +365,11 @@ main {
     width: 100%;
     margin: auto;
 
-
-
 }
 
+.fontawesome-icon-color {
+    color: #ffffff;
+}
 /*media queries */
 
 /* Tablets and larger */
