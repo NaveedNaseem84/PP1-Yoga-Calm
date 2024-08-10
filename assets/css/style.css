@@ -99,6 +99,12 @@ nav {
     display: none;
 }
 
+.active-page {
+    text-decoration: underline;
+    font-weight: bold;
+   color: red;
+}
+
 /*main content styling*/
 main {
     /*push footer to bottom and the main element take up rest of the space*/
@@ -223,7 +229,7 @@ main {
 .flex {
 
     text-align: left;
-    padding: 30px 5px;
+    padding: 30px 5px 0 0;
     background-color: rgba(0, 0, 0, .2);
 
 
@@ -461,14 +467,14 @@ main {
         display: flex;
         width: 55%;
         text-align: right;
-        font-size: 110%;
+        font-size: 130%;
         margin: auto;
 
     }
 
     .flex img {
         display: flex;
-        width: 65%;
+        width: 75%;
         margin: auto;
         text-align: center;
 
@@ -478,16 +484,15 @@ main {
         width: 100%;
         margin: 3px;
         text-align: left;
-        padding-bottom: 150px;
-        padding-left: 20px;
-
-
+        padding-bottom: 10px;
+        padding-left: 20px; 
     }
 
     #yoga-intro {
         width: 55%;
         text-align: center;
         margin: auto;
+        font-size: 130%;
     }
 
     #feedbackform {
