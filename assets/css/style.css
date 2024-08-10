@@ -223,8 +223,10 @@ main {
     margin: 5px;
     padding: 5px;
 }
-#feedback-form > select {
-    height:30px;
+#feedback-form > textarea {
+   
+    font-size: 16px;
+    width: 80%;
 }
 
 #feedback-form  {
@@ -233,8 +235,9 @@ main {
    text-align: center;
 }
 .text-input{
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 5px;
+    height: 30px;
 }
 
 
@@ -365,8 +368,8 @@ main {
     #feedbackform {
       margin-top: 0.5%;
       margin-left: 3.5%;
-        padding-left: 25%;
-        padding-right: 25%;      
+        padding-left: 30%;
+        padding-right: 30%;      
         
     }
     
