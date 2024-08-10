@@ -472,7 +472,11 @@ main {
         width: 55%;
         text-align: right;
         font-size: 130%;
-        margin: auto;
+        margin: auto;      
+    }
+
+    .flex ul li {
+        padding: 10px 0 10px 0;
 
     }
 
