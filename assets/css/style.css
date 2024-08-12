@@ -135,7 +135,7 @@ main {
     background-color: rgba(0, 0, 0, .6);
     font-size: 120%;
     position: absolute;
-    bottom: 350px;
+    bottom: 300px;
     left: 40px;
     width: 80%;
     min-height: 200px;
@@ -164,7 +164,7 @@ main {
 
 }
 
-#cover-text h2 {
+#cover-text h1 {
     color: #ffffff;
 
 }
@@ -230,16 +230,16 @@ main {
 .flex {
 
     text-align: left;
-    padding: 30px 5px 0 10px;
+    padding: 20px 5px 20px 30px;
     background-color: rgba(0, 0, 0, .2);
 
-
 }
-
 .flex img {
-    width: 100%;
-
-}
+    width: 80%;
+   height: auto;   
+  margin-top: 1%;
+  margin-left: 10%;
+}d
 
 .flex ul {
     padding-left: 20px;
@@ -252,6 +252,16 @@ main {
     padding: 0 0 15px 0;
 }
 
+
+
+#yoga-intro {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+#yoga-disclaimer {
+    padding-top: 20px;
+ }
 /* below now not being used as streamlined using flex*/
 /*
 #seated-twist {
@@ -405,7 +415,7 @@ main {
     #cover-text {
         width: 600px;
         left: 3%;
-        top: 1%;
+        top: 2%;
         font-size: 130%;
         height: 50%;
 
@@ -484,7 +494,7 @@ main {
 
     .flex img {
         display: flex;
-        width: 75%;
+        width: 70%;
         margin: auto;
         text-align: center;
 
@@ -497,8 +507,18 @@ main {
         padding-bottom: 10px;
         padding-left: 20px; 
     }
+    #seated-pose {
+        width: 40%;
+    }
 
     #yoga-intro {
+        width: 55%;
+        text-align: center;
+        margin: auto;
+        font-size: 130%;
+    }
+
+    #yoga-disclaimer {
         width: 55%;
         text-align: center;
         margin: auto;

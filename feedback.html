@@ -19,14 +19,13 @@
 <body>
     <!--header-->
     <header>
-        <a id="logo" href="index.html"><img src="assets/images/Logo_small.png" aria-label="Yoga calm logo - takes to home page">
-        </a>
+        <a id="logo" href="index.html"><img src="assets/images/Logo_small.png" height="66" width="166" alt="Yoga Calm Logo" aria-label="Yoga calm logo - takes to home page "></a>        
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars fontawesome-icon-color"></i></label>
         <nav>
             <ul id="navmenu">
-                <li><a class="active-page" href="index.html" aria-label="Loads the home page">Home</a></li>
-                <li><a href="startyoga.html" aria-label="loads the start yoga page"> Start Yoga</a></li>
+                <li><a href="index.html" aria-label="loads the home page">Home</a></li>
+                <li><a class="active-page" href="startyoga.html" aria-label="loads the start yoga page"> Start Yoga</a> </li>               
                 <li><a href="feedback.html" aria-label="loads the feedback page"> Win!</a></li>
             </ul>
         </nav>
@@ -38,13 +37,13 @@
                 <h1>Feedback.</h1>
                 <p>Please fill in below to recieve a free Yoga Mat!*</p>
                 <label class="feedback-form" for="input-name">Name:</label><br>
-                <input id="input-name" type="text" name="full_name" class="text-input"required><br>
-                
+                <input id="input-name" type="text" name="full-name" class="text-input" required><br>                
                 <label class="feedback-form" for="input-email"> Email: </label><br>
-                <input id="input-email" type="email" name="email_address"class="text-input" required>
+                <input id="input-email" type="email" name="email-address" class="text-input" required>
                 <br>
                 <label class="feedback-form" for="age">Age:</label><br>
-                <select id="age" name="age"  class="text-input"required>
+                <select id="age" name="age"  class="text-input">
+                    <option value="">Select</option>
                     <option value="under-20">Under 20</option>
                     <option value="20s">20-29</option>
                     <option value="30s">30-39</option>
@@ -62,25 +61,25 @@
                 <label class="feedback-form" for="two-to-three-day">2 to 3</label>
                 <input type="radio" name="days-wfh" id="two-to-three-day" value="2 to 3" required>
 
-                <label class="feedback-form"for="everyday">5</label>
+                <label class="feedback-form" for="everyday">5</label>
                 <input type="radio" name="days-wfh" id="everyday" value="everyday" required>
 
-                <label class="feedback-form"for="not-often">Not often</label>
+                <label class="feedback-form" for="not_often">Not often</label>
                 <input type="radio" id="not-often" name="days-wfh" value="not-often" required>
                  </div>
                 <br>
-                <p>How can we improve?</p>
-                
+                <label class="feedback-form" for="feedback">How can we improve?</label>                
                 <textarea id="feedback" rows="6" cols="45" name="feedback" class=""></textarea>
                 <br>                                     
                     <input type="checkbox" id="join-mail" name="mailinglist" value="join">
                 <label class="feedback-form" for="join-mail">Join our mailing list for the latests offers!</label>  
                     <br>
-                    <input id="submit-style" type="submit" value="Enter">
-                    <input id="reset-style" type="reset" value="Reset">
+                    <input id="submit-style" type="submit" value="Enter" aria-label="Submits the filled in information.">
+                    <input id="reset-style" type="reset" value="Reset" aria-label="Resets the filled in information.">
                     <p>*1 mat per registered user</p>
+         </form>           
         </section>
-        </form>
+        
     </main>
 
     <!--footer-->
