@@ -2,24 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Removal of default style using wildcard*/
-/* guidance followed from CI Love Running Project*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
 /* Body style*/
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Gen styling*/
     color: black;
     font-family: 'Poppins', sans-serif;
-
-
 }
 
 h1,
@@ -31,25 +26,21 @@ h3 {
 
 /*Header styles*/
 header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 1.2rem;
     background-color: black;
     color: #ffffff;
-    padding: 1rem 1.2rem;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
-
 }
 
-/* Toggle of Nav bar*/
-
+/* Nav bar*/
 header a {
     text-decoration: none;
     color: #ffffff;
-
-
 }
 
 header img {
@@ -60,35 +51,30 @@ nav a:hover {
     text-decoration: underline;
     font-weight: bold;
     color: grey;
-
 }
 
 #navmenu {
     font-size: 110%;
     letter-spacing: 6px;
     list-style-type: none;
-
-
 }
 
 #navmenu>li {
     margin-bottom: 10px;
 }
 
-
 nav {
     position: absolute;
-    background-color: black;
     padding: 0 10px 0 10px;
     width: 100%;
     left: 0;
     display: none;
-    top: 100%
+    top: 100%;
+    background-color: black;
 }
 
 #nav-toggle:checked~nav {
     display: block;
-
 }
 
 .nav-toggle-label {
@@ -99,100 +85,85 @@ nav {
     display: none;
 }
 
-.active-page {
-    text-decoration: underline;
-    font-weight: bold;
-   color: red;
-}
-
 /*main content styling*/
 main {
-    /*push footer to bottom and the main element take up rest of the space*/
     flex: 1 0 auto;
     margin-top: 100px;
-    background-color: rgb(243, 240, 233);
     display: flex;
     flex-direction: column;
-
+    background-color: rgb(243, 240, 233);
 }
 
 .center-text {
     text-align: center;
 }
 
+.active-page {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Landing page (index.html) styling*/
 
 #main-yoga-background {
-    height: 1089px;
-
-    width: 100%;
-    /* background: url("../images/yoga-image-background.png")no-repeat center center/cover;*/
-    /*background: url("../images/yoga-main-background1.jpg")no-repeat center center/cover;*/
-    background: url("../images/main_background2.webp")no-repeat center center/cover;
     position: relative;
+    height: 1089px;
+    width: 100%;
+    background: url("../images/main-yoga-background.webp")no-repeat center center/cover;
 }
 
 #cover-text {
-    background-color: rgba(0, 0, 0, .6);
-    font-size: 120%;
     position: absolute;
     bottom: 300px;
     left: 40px;
     width: 80%;
     min-height: 200px;
-    padding-top: 40px;
-    padding-left: 30px;
+    padding: 30px 20px 20px 30px;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 120%;
     border-radius: 15px;
-    padding-bottom: 20px;
-
 }
 
 #quote-text {
-    background-color: rgba(0, 0, 0, .6);
-    font-size: 150%;
     position: relative;
     top: 77%;
     left: 40px;
     width: 80%;
     min-height: 50px;
-    padding-top: 20px;
-    padding-left: 30px;
-    border-radius: 15px;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 30px;
+    background-color: rgba(0, 0, 0, .6);
     color: #ffffff;
+    font-size: 150%;
     font-style: italic;
     text-align: left;
-
+    border-radius: 15px;
 }
 
 #cover-text h1 {
     color: #ffffff;
-
 }
 
 #cover-text ul {
     color: #ffffff;
-
 }
 
 #cover-text p {
     color: #ffffff;
-
 }
 
 #cover-text li {
     list-style-type: none;
-
 }
 
 #knowmore {
-   
+    margin: 0 40px 0 10px;
+    padding: 10px;
+    background-color: #ffffff;
     text-align: center;
     text-decoration: none;
-    margin: 0 40px 0 10px;
-    border: 1px solid white;
-    padding: 10px;
     border-radius: 5px;
-    background-color: #ffffff;
+    border: 1px solid white;
 }
 
 #knowmore a:hover {
@@ -203,99 +174,49 @@ main {
     color: black;
 }
 
-/*ystart yoga styles*/
+/*Start Yoga (startyoga.html) page styling*/
 
-#tree-image img {
-    width: 100%;
-}
-
-#seated-twist-image img {
-    width: 100%;
-
-}
-
-#forward-fold-image img {
-    width: 100%;
-
-}
-
-#tree-pose {
-    background-color: lightcoral;
-    padding: 10px 10px 10px 30px;
-    text-align: left;
-
-
-}
-
-.flex {
-
-    text-align: left;
+.sn-pose-flex {
     padding: 20px 5px 20px 30px;
     background-color: rgba(0, 0, 0, .2);
-
+    text-align: left;
 }
-.flex img {
+
+.sn-pose-flex img {
     width: 80%;
-   height: auto;   
-  margin-top: 1%;
-  margin-left: 10%;
-}d
-
-.flex ul {
-    padding-left: 20px;
-
+    height: auto;
+    margin-top: 1%;
+    margin-left: 5%;
 }
 
-.flex h2 {
+.sn-pose-flex ul {
+    padding-left: 20px;
+}
+
+.sn-pose-flex h2 {
+    padding: 0 0 15px 0;
     text-decoration: underline;
     font-weight: bold;
-    padding: 0 0 15px 0;
 }
 
-
-
 #yoga-intro {
-   padding-top: 10px;
-   padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #yoga-disclaimer {
     padding-top: 20px;
- }
-/* below now not being used as streamlined using flex*/
-/*
-#seated-twist {
-    background-color: lightblue;
-    padding: 10px 10px 10px 30px;
-    text-align: left;
-    
 }
 
-#forward-fold {
-    background-color: lightslategrey;
-    padding: 10px 10px 10px 30px;
-    margin-bottom: 50px;
-    text-align: left;
-    
+/*Win! (feedback.html) styling*/
+
+#feedback-yoga-background {
+    flex-grow: 1;
+    background: url("../images/feedback-form-background.webp") 75%/cover;
+    padding: 20px 10% 0 10%;
 }
-#tree-pose-image {
-    
-    background: url("../images/tree-pose.png") center center/cover;
-    display: flexbox;
-    width: 70%;
-    height: 20vh;
-    padding: 5px;
-    border: 1px solid blue;    
-    background-color: yellow; 
-   align-items: center;
 
-
-  }
-   */
-
-
-/*feedback form styling*/
-
+/*form styling*/
 
 #feedback-form p,
 #feedback-form label {
@@ -304,84 +225,70 @@ main {
 }
 
 #feedback-form>textarea {
-
-    font-size: 16px;
-    width: 80%;
     padding-right: 25px;
+    width: 80%;
+    font-size: 16px;
 }
 
 #feedback-form {
-    border: 1px solid black;
-    background-color: rgba(0, 0, 0, .6);
-    border-radius: 15px;
-    text-align: center;
-    padding-left: 10px;
     width: auto;
-
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, .6);
     color: #ffffff;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 .text-input {
-    font-size: 16px;
-    margin-bottom: 5px;
     height: 25px;
-
+    margin-bottom: 5px;
+    font-size: 16px;
 }
 
 
 /* form control styling*/
-#submit-style {
-
+#btn-submit-style {
+    width: 150px;
     margin: 15px;
     padding: 15px;
     background-color: black;
     color: white;
+    font-size: 18px;
     border: none;
     border-radius: 15px;
-    font-size: 18px;
-    width: 150px;
 }
 
-#reset-style {
-
+#btn-reset-style {
     margin: 15px;
     padding: 15px;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 15px;
     font-size: 18px;
     border: 1px solid red;
-}
-
-#feedback-yoga-background {
-   /* background-image: url("../images/feedback-form-back-ground.jpg");*/
-   background-image: url("../images/feedback-form-back-ground1.webp");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
+    border-radius: 15px;
 }
 
 /* footer styling*/
 #socials {
-    background-color: black;
-    text-align: center;
-    padding: 8px 0;
     display: flex;
-    justify-content: space-around;
-    font-size: 30px;
-    list-style-type: none;
     bottom: 0;
     right: 0;
     width: 100%;
     margin: auto;
-
+    padding: 8px 0;
+    background-color: black;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style-type: none;
 }
 
 .fontawesome-icon-color {
     color: #ffffff;
 }
+
 /*media queries */
 
 /* Tablets and larger */
@@ -389,7 +296,6 @@ main {
 
     main {
         /*push footer to bottom and the main element take up rest of the space*/
-
         margin-top: 120px;
     }
 
@@ -413,144 +319,88 @@ main {
     }
 
     #cover-text {
-        width: 600px;
+        width: 510px;
         left: 3%;
         top: 2%;
-        font-size: 130%;
         height: 50%;
-
+        font-size: 130%;
     }
 
     #quote-text {
-        background-color: rgba(0, 0, 0, .6);
-        font-size: 150%;
         position: relative;
         top: 80%;
         left: 10px;
         width: 80%;
         min-height: 50px;
-        padding-top: 20px;
-        padding-left: 30px;
-        border-radius: 15px;
-        padding-bottom: 20px;
+        padding: 20px 30px 20px 30px;
+        background-color: rgba(0, 0, 0, .6);
+        font-size: 150%;
         color: #ffffff;
         font-style: italic;
-        text-align: left;
-
     }
 
     #knowmore {
-   
-        
-        margin: 0 40px 0 10px;
-       
+        margin: auto;
         padding: 5px;
-       width: 30%;;
+        width: 30%;
         background-color: #ffffff;
     }
 
     #quote-text {
         width: 99%;
         text-align: center;
-
     }
 
-    /* below now not being used as streamlined using flex*/
-    /*
-    #forward-fold {
-        background-color: lightslategrey;
-        padding: 10px 10px 20px 1000px;
-        margin-bottom: 50px;
-        text-align: left;
-        
-    }
-
-    #seated-twist {
-        background-color: lightblue;
-        padding: 10px 10px 20px 1000px;
-        text-align: left;
-    }
-
-    #tree-pose {
-        background-color: lightcoral;
-        padding: 10px 10px 20px 1000px;
-       display: flex;
-       text-align: left;
-        
-    }
-       */
-    .flex {
+    .sn-pose-flex {
         display: flex;
         width: 55%;
+        margin: auto;
+        padding-left: 60px;
         text-align: right;
         font-size: 130%;
-        margin: auto;      
     }
 
-    .flex ul li {
+    .sn-pose-flex ul li {
         padding: 10px 0 10px 0;
-
     }
 
-    .flex img {
+    .sn-pose-flex img {
         display: flex;
         width: 70%;
         margin: auto;
         text-align: center;
-
     }
 
-    .flex>div {
+    .sn-pose-flex>div {
         width: 100%;
         margin: 3px;
+        padding: 0 20px 10px 20px;
         text-align: left;
-        padding-bottom: 10px;
-        padding-left: 20px; 
     }
+
     #seated-pose {
         width: 40%;
     }
 
     #yoga-intro {
         width: 55%;
-        text-align: center;
         margin: auto;
+        text-align: center;
         font-size: 130%;
     }
 
     #yoga-disclaimer {
         width: 55%;
-        text-align: center;
         margin: auto;
+        text-align: center;
         font-size: 130%;
     }
 
     #feedbackform {
-        /* margin-top: 0.5%;
-      margin-left: 0.5%;
-        padding-left: 10%;
-        padding-right: 50%;      
-        */
         max-width: 450px;
         position: relative;
         left: 2%;
         top: 50px;
     }
 
-    /* below now not being used as streamlined using flex*/
-    /*
-
-    #tree-image img {
-        width: 75%;    
-    }
-    #seated-twist-image img {
-        width: 30%;
-        
-    }
-    #forward-fold-image img {
-        width: 30%;
-        
-    }
-
-  */
 }

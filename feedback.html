@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Love Yoga. Platform for yoga at home, anytime. Tailored yoga for back pain and stress">
+    <meta name="description" content="Love Yoga. Platform for yoga at home, anytime. Tailored yoga for back pain and stress">
     <meta name="keywords" content="love yoga, relaxing, remote working, stressed, painful back, exercise">
     <title>Yoga Calm - feedback </title>
-    <!--Fav icons from Code Insitute used on Love Running walkthrough project used for the purposes of this project. -->
-    <!--Will be properly referenced in the read me file. -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -33,16 +31,17 @@
     <!--main body-->
     <main id="feedback-yoga-background">
         <section id="feedbackform">
+            <!--Form-->
             <form id="feedback-form" action="https://formdump.codeinstitute.net" method="post">
                 <h1>Feedback.</h1>
                 <p>Please fill in below to recieve a free Yoga Mat!*</p>
-                <label class="feedback-form" for="input-name">Name:</label><br>
+                <label for="input-name">Name:</label><br>
                 <input id="input-name" type="text" name="full-name" class="text-input" required><br>                
-                <label class="feedback-form" for="input-email"> Email: </label><br>
+                <label for="input-email"> Email: </label><br>
                 <input id="input-email" type="email" name="email-address" class="text-input" required>
                 <br>
-                <label class="feedback-form" for="age">Age:</label><br>
-                <select id="age" name="age"  class="text-input">
+                <label for="age">Age:</label><br>
+                <select id="age" name="age" class="text-input">
                     <option value="">Select</option>
                     <option value="under-20">Under 20</option>
                     <option value="20s">20-29</option>
@@ -54,45 +53,38 @@
                 </select>
                 <br>
                 <div class="radio-buttons">
-                <p>How many days a week do you work from home?</p>
-                <label class="feedback-form" for="one-day">1</label>
-                <input type="radio" name="days-wfh" id="one-day" value="1" required>
+                    <p>How many days a week do you work from home?</p>
+                    <label for="one-day">1</label>
+                    <input type="radio" name="days-wfh" id="one-day" value="1" required>
 
-                <label class="feedback-form" for="two-to-three-day">2 to 3</label>
-                <input type="radio" name="days-wfh" id="two-to-three-day" value="2 to 3" required>
+                    <label for="two-to-three-day">2 to 3</label>
+                    <input type="radio" name="days-wfh" id="two-to-three-day" value="2 to 3" required>
 
-                <label class="feedback-form" for="everyday">5</label>
-                <input type="radio" name="days-wfh" id="everyday" value="everyday" required>
+                    <label for="everyday">5</label>
+                    <input type="radio" name="days-wfh" id="everyday" value="everyday" required>
 
-                <label class="feedback-form" for="not-often">Not often</label>
-                <input type="radio" id="not-often" name="days-wfh" value="not-often" required>
-                 </div>
+                    <label for="not-often">Not often</label>
+                    <input type="radio" id="not-often" name="days-wfh" value="not-often" required>
+                </div>
                 <br>
-                <label class="feedback-form" for="feedback">How can we improve?</label>                
+                <label for="feedback">How can we improve?</label>                
                 <textarea id="feedback" rows="6" cols="45" name="feedback" class=""></textarea>
                 <br>                                     
-                    <input type="checkbox" id="join-mail" name="mailinglist" value="join">
-                <label class="feedback-form" for="join-mail">Join our mailing list for the latests offers!</label>  
-                    <br>
-                    <input id="submit-style" type="submit" value="Enter" aria-label="Submits the filled in information.">
-                    <input id="reset-style" type="reset" value="Reset" aria-label="Resets the filled in information.">
-                    <p>*1 mat per registered user</p>
+                <input type="checkbox" id="join-mail" name="mailinglist" value="join">
+                <label for="join-mail">Join our mailing list for the latests offers!</label>  
+                <br>
+                <input id="btn-submit-style" type="submit" value="Enter" aria-label="Submits the filled in information.">
+                <input id="btn-reset-style" type="reset" value="Reset" aria-label="Resets the filled in information.">
+                <p>*1 mat per registered user</p>
          </form>           
-        </section>
-        
+        </section>        
     </main>
-
     <!--footer-->
     <footer>
-        <ul id="socials">
-            <li><a href="https://Facebook.com" target="_blank" rel="noopener"
-                    aria-label="new tab - visit us on facebook"><i class="fa-brands fa-facebook fontawesome-icon-color"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank" rel="noopener"
-                    aria-label="new tab - visit us on instagram"><i class="fa-brands fa-square-instagram fontawesome-icon-color"></i></a></li>
-            <li><a href="https://x.com/?lang=en" target="_blank" rel="noopener" aria-label="new tab - visit us on X"><i
-                        class="fa-brands fa-square-x-twitter fontawesome-icon-color"></i></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="new tab - visit us on youtube"><i class="fa-brands fa-youtube fontawesome-icon-color"></i></a></li>
+        <ul id="socials"><li><a href="https://Facebook.com" target="_blank" rel="noopener" aria-label="new tab - visit us on facebook"><i class="fa-brands fa-facebook fontawesome-icon-color"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="new tab - visit us on instagram"><i class="fa-brands fa-square-instagram fontawesome-icon-color"></i></a></li>
+            <li><a href="https://x.com/?lang=en" target="_blank" rel="noopener" aria-label="new tab - visit us on X"><i class="fa-brands fa-square-x-twitter fontawesome-icon-color"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="new tab - visit us on youtube"><i class="fa-brands fa-youtube fontawesome-icon-color"></i></a></li>
         </ul>
     </footer>
     <!-- font awesome import-->
