@@ -104,13 +104,14 @@ main {
     font-weight: bold;
 }
 
-/*Landing page (index.html) styling*/
+/*Landing page styling*/
 
 #main-yoga-background {
     position: relative;
     height: 1089px;
     width: 100%;
     background: url("../images/main-yoga-background.webp")no-repeat center center/cover;
+    flex-grow: 1;   
 }
 
 #cover-text {
@@ -174,10 +175,10 @@ main {
     color: black;
 }
 
-/*Start Yoga (startyoga.html) page styling*/
+/*Start Yoga page styling*/
 
 .sn-pose-flex {
-    padding: 20px 5px 20px 30px;
+    padding: 20px 15px 20px 20px;
     background-color: rgba(0, 0, 0, .2);
     text-align: left;
 }
@@ -185,8 +186,8 @@ main {
 .sn-pose-flex img {
     width: 80%;
     height: auto;
-    margin-top: 1%;
-    margin-left: 5%;
+    margin-top: 2%;
+    margin-left: 8%;
 }
 
 .sn-pose-flex ul {
@@ -200,15 +201,14 @@ main {
 }
 
 #yoga-intro {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 10px 10px 10px;
 }
 
 #yoga-disclaimer {
-    padding-top: 20px;
+     padding: 20px 10px 10px 10px;
 }
 
-/*Win! (feedback.html) styling*/
+/*Win! styling*/
 
 #feedback-yoga-background {
     flex-grow: 1;
@@ -238,6 +238,7 @@ main {
     text-align: center;
     border: 1px solid black;
     border-radius: 15px;
+    margin: 10px 0 10px 0;
 }
 
 .text-input {
@@ -353,9 +354,120 @@ main {
 
     .sn-pose-flex {
         display: flex;
+        width: 65%;
+        margin: auto;
+        padding-left: 40px;
+        text-align: right;
+        font-size: 100%;
+    }
+
+    .sn-pose-flex ul li {
+        padding: 10px 0 10px 0;
+    }
+
+    .sn-pose-flex img {
+        display: flex;
+        width: 90%;
+        margin-top: 70%;
+        text-align: center;
+    }
+
+    .sn-pose-flex>div {
+        width: 100%;
+        margin: 3px;
+        padding: 0 20px 10px 20px;
+        text-align: left;
+    }
+
+    #yoga-intro {
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    #yoga-disclaimer {
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    #feedbackform {
+        max-width: 450px;
+        position: relative;
+        left: 2%;
+        top: 50px;
+    }
+
+}
+
+/* media query for laptops, desktops etc...*/
+@media screen and (min-width: 992px) {
+   
+    main {
+        /*push footer to bottom and the main element take up rest of the space*/
+        margin-top: 120px;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding: 1rem;
+    }
+
+    #navmenu {
+        display: flex;
+    }
+
+    #navmenu>li {
+        padding-left: 30px;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #cover-text {
+        width: 510px;
+        left: 3%;
+        top: 2%;
+        height: 60%;
+        font-size: 135%;
+    }
+
+    #quote-text {
+        position: relative;
+        top: 80%;
+        left: 10px;
+        width: 80%;
+        min-height: 50px;
+        padding: 20px 30px 20px 30px;
+        background-color: rgba(0, 0, 0, .6);
+        font-size: 150%;
+        color: #ffffff;
+        font-style: italic;
+    }
+
+    #knowmore {
+        margin: auto;
+        padding: 5px;
+        width: 30%;
+        background-color: #ffffff;
+    }
+
+    #quote-text {
+        width: 99%;
+        text-align: center;
+    }
+
+    .sn-pose-flex {
+        display: flex;
         width: 55%;
         margin: auto;
         padding-left: 60px;
+        padding-top: 30px;
         text-align: right;
         font-size: 130%;
     }
@@ -366,7 +478,7 @@ main {
 
     .sn-pose-flex img {
         display: flex;
-        width: 70%;
+        width: 90%;
         margin: auto;
         text-align: center;
     }
@@ -378,8 +490,8 @@ main {
         text-align: left;
     }
 
-    #seated-pose {
-        width: 40%;
+    .sn-pose-instructions {
+        margin-top: 10%;
     }
 
     #yoga-intro {
@@ -402,5 +514,4 @@ main {
         left: 2%;
         top: 50px;
     }
-
 }
