@@ -263,17 +263,19 @@ It has also been used to create the site map.
     margin: 0;
     box-sizing: border-box;
 }`
-* The code for the toggle menu, navigation menu, and the idea for the footer social icons was taken from the love running CI project and adapted to the Yoga Calm project requirements.
+* The toggle menu, navigation menu, and the idea for the footer social icons were taken from the love running CI project and adapted to the Yoga Calm project requirements. The sole purpose of this was to gain an understanding of how this logically worked and could be implemented.
 
 * The favicons used were also from the Love Running CI project.
 
  Reference links to the Love Running CI project :
   [Love Running walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LRFX101+5/courseware/e805068059af42af87681032aa64053f/7525117e5cd144daa2a7b0c57843bbee/?child=first)
 
+
+
 #### Landing page:
 * The background was taking from: [A Person doing Yoga - Pexels](https://www.pexels.com/photo/a-person-doing-yoga-6648548/)
 
-* The quote  was taken from:  [105 Best Yoga Quotes to Inspire your Practice - Parade](https://www.pexels.com/photo/a-person-doing-yoga-6648548/)
+* The quote  was taken from:  [105 Best Yoga Quotes to Inspire your Practice - Parade](https://parade.com/1158471/kelseypelzer/yoga-quotes/)
 
 #### Start Yoga page:
 * Yoga general facts:
@@ -303,6 +305,5 @@ A huge thank you to Code Institute for the learning and lesson material which ha
 ## Personal Summary
 The project on a whole has brought with it reasonable learning curve. Ranging from the dos and don’ts from an industry standard point of view to the amazing support available on the slack channels, and the invaluable advice from an amazing mentor. This learning has been noted and any actions arisen as a result to work upon.
 
-One of the main points that I have taken away is around GitHub. As this was my first project using GitHub and proper version control , the use and understanding has increased whilst pushing out to my repository. Reflecting back, there may have been some commits that could have combined with others, but I endeavor to take this on as an action to practice and refine for future projects.
-
+One of the main points that I have taken away is around GitHub. As this was my first project using GitHub and proper version control, the use and understanding has increased whilst pushing out to my repository. Reflecting back, there may have been some commits that could have combined with others, but I endeavor to take this on as an action to practice and refine for future projects. In addition to this, I have also understood the importance of bug ID's. Having this documented makes referencing back to them (and their fix!) easy to find. This again I have taken on as a learning curve to implement in future projects.
 
