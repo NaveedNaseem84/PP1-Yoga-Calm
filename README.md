@@ -1,7 +1,7 @@
 # Yoga Calm 
 Yoga calm is a website aiming to provide tailored yoga information to individuals working remotely. 
 
-The intended purpose is to provide everything in one place without the need to navigate externally, and acts as a reference guide for time in between meetings or at the end of the day to stretch your back or wind down and relax.
+The intended purpose is to provide everything in one place without the need to navigate externally, and act as a reference guide for time in between meetings or at the end of the day to stretch your back or wind down and relax.
 
 ## User Experience (UX)
 ### User Stories
@@ -89,6 +89,7 @@ An inspirational quote by a yoga user is also displayed towards the bottom of th
 The start yoga page firstly begins by presenting the user with a warm welcome and congratulating them on taking the first step. It further describes the intention of the yoga poses selected and their proposed aim. 
 
 As the landing page introduced, the poses selected are tailored to help people working remotely. For example, individuals sitting down for extended periods of time resulting in back pain or the need to stretch their legs!
+
 The content on the page is displayed so it is easy to follow: the instructions placed on the left with image displayed to the right. 
 
 ![A snapshot from the startyoga](readme-images/start-yoga-snapshot.png)
@@ -128,7 +129,7 @@ A top-level site map for the site can be viewed [here.](readme-images/site-map.p
 
 ## Testing
 
-* The site has been tested on desktop versions of Chrome and Edge, testing the functionality and responsiveness. 
+* The site has been tested on desktop versions of Chrome, Edge and Mozilla Firefox, testing the functionality and responsiveness. 
 * The desktop resolutions tested range from 1366 x 768 to 1920 x 1080.
 * The site has been tested on mobile versions of Chrome and Safari on the following devices:
   * Samsung S24 Ultra
@@ -143,9 +144,19 @@ A top-level site map for the site can be viewed [here.](readme-images/site-map.p
 The testing above found no issues in performance or accessibility and I believe the site meets the requirements of the user stories and its intended purpose.
 
 ### Bugs
-**Issue:** Backgrounds/images were taking longer than normal to load up specifically on mobile devices and affected the lighthouse results.
+* **Issue 1:** Backgrounds/images were taking longer than normal to load up specifically on mobile devices and affected the lighthouse results.
 
-**Fix:** Using the web optimisation tools (listed under tools and Technology), the images were optimised and converted to webp files. This drastically improved the performance and user experience.
+  * **Fix:** Using the web optimisation tools (listed under tools and Technology), the images were optimised and converted to webp files. This drastically improved the performance and user experience.
+
+* **Issue 2:** The background on the landing page was not correctly scaling on different resolutions and browsers meaning there was sometimes a background colour block visible between the image and the footer. 
+
+  * **Fix:** This bug was fixed by applying the flex property with a value of 1 as done on the feedback page which allowed for the image to adjust to fill the space available.
+
+* **Issue 3:** On certain resolutions, it was discovered that the bottom of the form on the Win! page was overlapping the footer. This meant the overlapped icons on the footer were no longer useable.
+
+  * **Fix:** Using Chrome developer tools, I was able to isolate the problem to the form's margin. Still within developer tools, I adjusted the top margin accounting for the overlap. Once happy, this change was implemented in the live code and tested again.
+
+
 
 ### Validation Testing
 After correcting a few semantical errors on the HTML element (spaces between ID and classes, included a H2 after a section and adding labels for textfields as examples), the following was tested:
@@ -155,7 +166,7 @@ After correcting a few semantical errors on the HTML element (spaces between ID 
  * CSS
     * No errors were found when running the official jigsaw Validator tool on all three pages [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnaveednaseem84.github.io%2FPP1-Yoga-Calm%2Ffeedback.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
 
-### Accessibility/performance
+### Accessibility/Performance
 Lighthouse in devtools produced the following results:
 
  **Index page:**
@@ -181,11 +192,11 @@ There are two potential future developments for this project.
 
 The site was created using gitpod's VS Code workspace environment with all the relevant files and folder structures created within. To deploy to github, the following commands were carried out in the command line terminal to commit and push the changes to the github repository: 
 
-1 `git add .`- (Staging the changes in the cu.rrent working tree ready to be commited).
+1 `git add .`- (Staging the changes in the current working tree ready to be commited).
 
 2 `git commit -m 'Meaningful commit message"` - (The working tree is prepared with an upload message).
 
-3. `git push` - (changes are pushed out up to the github repository).
+3 `git push` - (changes are pushed out up to the github repository).
 
 ### Deployment
 
@@ -195,20 +206,23 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 3.	Make sure:  
     * Source is set to 'Deploy from Branch'.
     * Main branch is selected.
-•	Folder is set to / (root).
+    *	Folder is set to / (root).
 4.	Under Branch, click Save.
-5.	Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo.
+5.	Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repo which will show the deployment has completed with a green tick at the top:
+
+![Sucessful deployment](readme-images/successful-deployment.png)
+
 6.	On the right-hand side, in the Environments section, click on 'github-pages'.
 7.	Click View deployment to see the live site.
 
-The live link to the site can be found here: [Yoga Calm](https://naveednaseem84.github.io/PP1-Yoga-Calm/index.html)
+The live link to the site can be found here: [Yoga Calm.](https://naveednaseem84.github.io/PP1-Yoga-Calm/index.html)
 
 ### Contribution
 I welcome any contributions/recommendations/changes to the project. In order to do this, the github repository would need to be forked from github and downloaded locally so it can be worked on. 
 
 Github has provided step by step instructions on how to do this [here.](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project#forking-a-repository)
 
-## Technologies Used
+## Technologies and tools Used
 ### Languages used
 * HTML
 
@@ -218,26 +232,28 @@ Github has provided step by step instructions on how to do this [here.](https://
 * #### Google Fonts: [Google Poppins font](https://fonts.google.com/specimen/Poppins)
   * The ‘Poppins’ font was imported into the style sheet (style.css) and used throughout the project.
 
-* **Font Awesome:** [Font awesome](https://fontawesome.com/)
+* #### Font Awesome: [Font awesome](https://fontawesome.com/)
 
   * The social media icons on the footer and the toggle menu icon were placed used font awesome. The classes used are listed in the UX section.
 
-* **Git/Gitpod:**
+* #### Git/Gitpod:
 
   * Gitpod’s workspace was used using the VSCode online editor using git to push to GitHub using version control. 
 
-* **GitHub:**
+* #### GitHub:
 
   * GitHub has been used to store the version control repository for the project and provide a live working external link once deployed.
 
-* **Figma**: [Figma: The Collaborative Interface Design Tool](https://figma.com/)
+* #### Figma: [Figma: The Collaborative Interface Design Tool](https://figma.com/)
 
   * Figma has been used to create the Yoga Calm logo and the UX illustration of the site.
 It has also been used to create the site map.
 
-* **Tiny PNG:** [TinyPNG – Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)
-* **Pixelied:** [Pixeled](https://pixelied.com/convert/jpg-converter/jpg-to-webp)
+* #### Tiny PNG: [TinyPNG – Compress WebP, PNG and JPEG images intelligently](https://tinypng.com/)
+* #### Pixelied: [Pixeled](https://pixelied.com/convert/jpg-converter/jpg-to-webp)
   * Tiny PNG and Pixelied were used to optimise the images for web use. 
+  
+* The code has been formatted using the built in "format document" option within the gitpod VS Code environment using the recommended "beautify" extension.
 
 ## Credits
 ### Content

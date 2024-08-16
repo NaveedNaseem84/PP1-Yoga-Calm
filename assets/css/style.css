@@ -111,7 +111,7 @@ main {
     height: 1089px;
     width: 100%;
     background: url("../images/main-yoga-background.webp")no-repeat center center/cover;
-    flex-grow: 1;   
+    flex-grow: 1;
 }
 
 #cover-text {
@@ -124,6 +124,7 @@ main {
     background-color: rgba(0, 0, 0, .6);
     font-size: 120%;
     border-radius: 15px;
+    list-style-type: circle;
 }
 
 #quote-text {
@@ -147,6 +148,7 @@ main {
 
 #cover-text ul {
     color: #ffffff;
+    margin-bottom: 26px;
 }
 
 #cover-text p {
@@ -154,7 +156,8 @@ main {
 }
 
 #cover-text li {
-    list-style-type: none;
+    list-style-type: circle;
+    margin-left: 10px;
 }
 
 #knowmore {
@@ -190,7 +193,7 @@ main {
     margin-left: 8%;
 }
 
-.sn-pose-flex ul {
+.sn-pose-flex ol {
     padding-left: 20px;
 }
 
@@ -204,8 +207,12 @@ main {
     padding: 20px 10px 10px 10px;
 }
 
+#yoga-intro p {
+    margin-bottom: 16px;
+}
+
 #yoga-disclaimer {
-     padding: 20px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
 }
 
 /*Win! styling*/
@@ -220,19 +227,22 @@ main {
 
 #feedback-form p,
 #feedback-form label {
-    margin: 5px;
-    padding: 5px;
+    margin-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    text-align: center;
 }
 
 #feedback-form>textarea {
     padding-right: 25px;
-    width: 80%;
+    width: 90%;
     font-size: 16px;
 }
 
 #feedback-form {
     width: auto;
-    padding-left: 10px;
+    padding-left: 5px;
     background-color: rgba(0, 0, 0, .6);
     color: #ffffff;
     text-align: center;
@@ -245,12 +255,18 @@ main {
     height: 25px;
     margin-bottom: 5px;
     font-size: 16px;
+    width: 70%;
+    margin-left: 50px;
+    margin-right: 60px;
 }
 
+.radio-buttons {
+    padding-bottom: 20px;
+}
 
 /* form control styling*/
-#btn-submit-style {
-    width: 150px;
+
+.button {
     margin: 15px;
     padding: 15px;
     background-color: black;
@@ -258,17 +274,14 @@ main {
     font-size: 18px;
     border: none;
     border-radius: 15px;
+}
+
+#btn-submit-style {
+    width: 130px;
 }
 
 #btn-reset-style {
-    margin: 15px;
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border: none;
-    font-size: 18px;
     border: 1px solid red;
-    border-radius: 15px;
 }
 
 /* footer styling*/
@@ -354,14 +367,14 @@ main {
 
     .sn-pose-flex {
         display: flex;
-        width: 65%;
+        width: 80%;
         margin: auto;
         padding-left: 40px;
         text-align: right;
         font-size: 100%;
     }
 
-    .sn-pose-flex ul li {
+    .sn-pose-flex ol li {
         padding: 10px 0 10px 0;
     }
 
@@ -397,14 +410,14 @@ main {
         max-width: 450px;
         position: relative;
         left: 2%;
-        top: 50px;
+        top: 10px;
     }
 
 }
 
 /* media query for laptops, desktops etc...*/
 @media screen and (min-width: 992px) {
-   
+
     main {
         /*push footer to bottom and the main element take up rest of the space*/
         margin-top: 120px;
@@ -433,7 +446,7 @@ main {
         width: 510px;
         left: 3%;
         top: 2%;
-        height: 60%;
+        height: 55%;
         font-size: 135%;
     }
 
@@ -472,7 +485,7 @@ main {
         font-size: 130%;
     }
 
-    .sn-pose-flex ul li {
+    .sn-pose-flex ol li {
         padding: 10px 0 10px 0;
     }
 
@@ -512,6 +525,6 @@ main {
         max-width: 450px;
         position: relative;
         left: 2%;
-        top: 50px;
+        top: 5px;
     }
 }
